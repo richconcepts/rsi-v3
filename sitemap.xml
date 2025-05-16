@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url>
+	<loc>https://www.referentia.com</loc>
+	<lastmod>2025-05-16</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>1.0</priority>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/liveaction-logo.png</image:loc>
+	<image:title>liveaction logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/liveaction-logo.webp</image:loc>
+	<image:title>liveaction logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/eRes-logo.png</image:loc>
+	<image:title>eRes logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/eRes-logo.webp</image:loc>
+	<image:title>eRes logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/cmaverse-logo.png</image:loc>
+	<image:title>eRes logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/cmaverse-logo.webp</image:loc>
+	<image:title>eRes logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/cyberoneway-logo.png</image:loc>
+	<image:title>eRes logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/cyberoneway-logo.webp</image:loc>
+	<image:title>eRes logo</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://www.referentia.com/business-units/</loc>
+	<lastmod>2025-05-16</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/la-dash.png</image:loc>
+	<image:title>la dash</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/la-dash.webp</image:loc>
+	<image:title>la dash</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/liveaction-white.png</image:loc>
+	<image:title>liveaction logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/liveaction-white.webp</image:loc>
+	<image:title>liveaction logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/eRes-meeting.png</image:loc>
+	<image:title>eRes meeting</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/eRes-meeting.webp</image:loc>
+	<image:title>eRes meeting</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/cma-img.png</image:loc>
+	<image:title>eRes meeting</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/cma-img.webp</image:loc>
+	<image:title>eRes meeting</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://www.referentia.com/careers/</loc>
+	<lastmod>2025-05-16</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/mtn-culture.jpg</image:loc>
+	<image:title>culture mtn</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/mtn-culture.webp</image:loc>
+	<image:title>culture mtn</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://www.referentia.com/contact/</loc>
+	<lastmod>2025-05-16</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/rsi-office.jpg</image:loc>
+	<image:title>rsi office</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/rsi-office.webp</image:loc>
+	<image:title>rsi office</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://www.referentia.com/about-us/</loc>
+	<lastmod>2025-05-16</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/cloud-mtns.jpg</image:loc>
+	<image:title>placeholder image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/cloud-mtns.webp</image:loc>
+	<image:title>placeholder image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/rsi%20logo%20grid.png</image:loc>
+	<image:title>placeholder image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://www.referentia.com/img/rsi%20logo%20grid.webp</image:loc>
+	<image:title>placeholder image</image:title>
+	</image:image>
+</url>
+</urlset>

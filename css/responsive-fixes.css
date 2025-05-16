@@ -1,0 +1,598 @@
+/* Responsive Fixes for RSI Website
+ * This stylesheet contains targeted fixes for responsive issues
+ */
+ 
+/* Prevent horizontal overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  padding-right: var(--space-sm, 16px);
+  padding-left: var(--space-sm, 16px);
+}
+
+/* Enhanced Button Styling */
+.btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Primary Button Hover */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(94, 44, 165, 0.3);
+  background-color: #6e3bc0; /* Slightly lighter purple */
+}
+
+/* CTA Button */
+.hero-content .btn-primary {
+  background-color: #5E2CA5;
+  border-color: #5E2CA5;
+  padding: 12px 28px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.hero-content .btn-primary:hover {
+  background-color: #6e3bc0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(94, 44, 165, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(94, 44, 165, 0.3);
+}
+
+/* Outline Button Hover */
+.btn-outline:hover, .btn-outline-white:hover {
+  background-color: rgba(245, 245, 246, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Secondary Button */
+.hero-content .btn-d {
+  border: 2px solid #5E2CA5;
+  color: #252527 !important;
+  font-weight: 500;
+  padding: 12px 28px;
+  background-color: transparent;
+}
+
+.hero-content .btn-d:hover {
+  background-color: rgba(94, 44, 165, 0.1);
+  color: #5E2CA5 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline:active, .btn-outline-white:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ripple Effect on Buttons */
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.8s;
+}
+
+/* Ensure good focus states for accessibility */
+.btn:focus, .nav-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(94, 44, 165, 0.4);
+}
+
+.btn-primary:focus {
+  background-color: #5E2CA5;
+  border-color: #5E2CA5;
+}
+
+/* Ensure links have proper focus states */
+a:focus {
+  outline: none;
+  text-decoration: underline;
+  color: #6e3bc0 !important;
+}
+
+.btn:active::after {
+  transform: scale(0, 0);
+  opacity: 0.3;
+  transition: 0s;
+}
+
+/* ==== Typography System ==== */
+:root {
+  /* Base typography variables */
+  --h1-desktop: 64px;
+  --h1-tablet: 48px;
+  --h1-mobile: 36px;
+  
+  --h2-desktop: 56px;
+  --h2-tablet: 42px;
+  --h2-mobile: 32px;
+  
+  --body-large-desktop: 20px;
+  --body-large-tablet: 18px;
+  --body-large-mobile: 16px;
+  
+  /* Spacing system */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 64px;
+  --space-xxl: 100px;
+}
+
+/* Improved Typography */
+.h1-ref {
+  font-size: var(--h1-desktop);
+  line-height: 1.1;
+}
+
+.h2-ref {
+  font-size: var(--h2-desktop);
+  line-height: 1.15;
+}
+
+.body-large {
+  font-size: var(--body-large-desktop);
+  line-height: 1.5;
+}
+
+/* Nav improvements */
+.nav-bar {
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure navigation text is visible */
+.navbar a, 
+.navbar-brand, 
+.navbar-text,
+.nav-link,
+.bloc .nav-link, 
+.bloc .navbar a,
+.d-bloc .navbar a {
+  color: var(--swatch-var-5556, #434347) !important;
+}
+
+/* Add class for mobile menu */
+.navbar-collapse.show {
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+
+/* Better mobile menu positioning */
+.fullscreen-nav.open-down {
+  top: 56px;
+}
+
+/* Touch-friendly menu items */
+.navbar-nav .nav-link {
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 0 10px; /* Increased spacing between links */
+  color: var(--swatch-var-5556, #434347) !important; /* Force dark text color */
+}
+
+/* Add a slight background on hover to main nav items */
+.navbar-nav > .nav-item > .nav-link:hover {
+  background-color: rgba(94, 44, 165, 0.03);
+  border-radius: 4px 4px 0 0;
+}
+
+/* Removed hover underline effect */
+
+.navbar-nav .nav-link:hover {
+  color: var(--swatch-var-4292, #5E2CA5) !important;
+}
+
+/* Dropdown styling */
+.dropdown-toggle {
+  position: relative;
+  padding-right: 25px !important;
+}
+
+/* Keep Bootstrap's default caret */
+
+.dropdown-toggle::before {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -2px;
+  width: 0;
+  height: 0;
+  border-left:.3em solid transparent; 
+  border-right: .3em solid transparent;
+  border-top: .3em solid var(--swatch-var-5556, #434347);
+  transition: transform 0.3s ease;
+}
+
+.dropdown-toggle[aria-expanded="true"]::before {
+  transform: rotate(180deg);
+}
+
+/* Enhanced dropdown menu */
+.dropdown-menu {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  margin-top: 6px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  display: block;
+  pointer-events: none;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-menu .nav-link {
+  padding: 10px 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  color: var(--swatch-var-5556, #434347) !important;
+}
+
+/* Ensure dropdown menu visibility */
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu .nav-link:hover {
+  background-color: rgba(94, 44, 165, 0.05);
+}
+
+.dropdown-menu .nav-link::after {
+  display: none;
+}
+
+/* Active dropdown item */
+.dropdown-menu .nav-link.active {
+  background-color: rgba(94, 44, 165, 0.1);
+  color: var(--swatch-var-4292, #5E2CA5) !important;
+  font-weight: 500;
+}
+
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 25px;
+  width: 12px;
+  height: 12px;
+  background: white;
+  transform: rotate(45deg);
+  border-top: 1px solid rgba(0,0,0,0.05);
+  border-left: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ==== Desktop Breakpoint (Default) ==== */
+.section-padding {
+  padding: var(--space-xxl) 0;
+}
+
+/* ==== Tablet Breakpoint ==== */
+@media (max-width: 991px) {
+  /* Typography adjustments */
+  .h1-ref {
+    font-size: var(--h1-tablet);
+  }
+  
+  .h2-ref {
+    font-size: var(--h2-tablet);
+  }
+  
+  .body-large {
+    font-size: var(--body-large-tablet);
+  }
+  
+  /* Tablet navigation adjustments */
+  .navbar-nav .nav-link {
+    padding: 12px 8px;
+    font-size: 15px;
+    margin: 0 6px; /* Reduced margins for tablet */
+  }
+  
+  .dropdown-toggle {
+    padding-right: 20px !important;
+  }
+  
+  .dropdown-toggle::before {
+    right: 6px;
+  }
+  
+  /* Spacing adjustments */
+  :root {
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-xxl: 64px;
+  }
+  
+  .section-padding {
+    padding: var(--space-xl) 0;
+  }
+  
+  /* Layout fixes */
+  .feature-unit {
+    flex-direction: column-reverse;
+  }
+  
+  .feature-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+  }
+  
+  .content-colum {
+    padding: 24px;
+  }
+  
+  .card-flex {
+    gap: 24px;
+  }
+  
+  /* Card image standardization */
+  .cma-card-img, .eres-card-img, .cow-card-img {
+    height: 150px;
+  }
+  
+  /* Square positioning in hero */
+  .squares-container {
+    width: 40%;
+    height: 80%;
+  }
+}
+
+/* ==== Small Tablet / Large Mobile Breakpoint ==== */
+@media (max-width: 767px) {
+  /* Navigation improvements */
+  .nav-bar {
+    padding: 0 10px;
+    height: 56px;
+  }
+  
+  .navbar-toggler {
+    padding: 6px;
+  }
+  
+  .ref-logo {
+    width: 120px;
+  }
+  
+  /* Mobile-specific dropdown improvements */
+  .fullscreen-nav {
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-nav {
+    padding: 20px 0;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-bottom: 8px;
+  }
+  
+  .navbar-nav .nav-link {
+    margin: 0 5px;
+    padding: 12px 20px;
+  }
+  
+  .dropdown-menu {
+    box-shadow: none;
+    background-color: rgba(245, 245, 246, 0.5);
+    margin-top: 0;
+    border-radius: 4px;
+    padding: 0;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  .dropdown-menu::before {
+    display: none;
+  }
+  
+  .dropdown-toggle::before {
+    right: 15px;
+  }
+  
+  /* Hero layout */
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+  }
+  
+  .paddler-img {
+    height: 300px;
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Button layout */
+  .hero-row .btn {
+    margin: 0 5px 10px 5px;
+    min-width: 140px;
+  }
+  
+  /* Better touch targets */
+  .nav-link, .btn, .footer-link {
+    padding: 12px;
+    min-height: 44px;
+  }
+  
+  /* Footer fixes */
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    margin-bottom: 24px;
+    width: auto;
+  }
+  
+  .footer-link {
+    margin-bottom: 12px;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Better image handling */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better responsive background images */
+[class*="-card-img"] {
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+/* Card hover effects */
+.card-body {
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.card-body:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-body:hover [class*="-card-img"] {
+  transform: scale(1.03);
+}
+
+/* ==== Mobile Breakpoint ==== */
+@media (max-width: 575px) {
+  /* Typography adjustments */
+  .h1-ref {
+    font-size: var(--h1-mobile);
+  }
+  
+  .h2-ref {
+    font-size: var(--h2-mobile);
+  }
+  
+  .body-large {
+    font-size: var(--body-large-mobile);
+  }
+  
+  /* Spacing adjustments */
+  :root {
+    --space-lg: 24px;
+    --space-xl: 40px;
+    --space-xxl: 48px;
+  }
+  
+  .section-padding {
+    padding: var(--space-lg) 0;
+  }
+  
+  /* Card layout */
+  .card-flex {
+    flex-direction: column;
+  }
+  
+  .card-body {
+    width: 100%;
+    margin-bottom: 24px !important;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  /* Enhanced card spacing */
+  .card-margin {
+    margin: 12px 0;
+  }
+  
+  .card-margin-btn {
+    margin: 16px 0;
+  }
+  
+  /* Button fixes */
+  .btn-primary {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .btn-outline-white {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  
+  /* Footer fixes */
+  .footer-style {
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Improved footer spacing for mobile */
+  footer {
+    margin: 20px 10px !important;
+  }
+  
+  .footer-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  
+  /* Square positions */
+  .squares-container {
+    height: 200px;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Image height adjustments */
+  .cma-card-img, .cow-card-img {
+    height: 100px;
+  }
+}
